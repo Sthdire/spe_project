@@ -1,12 +1,94 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Opificio Bold-Rounded", sans-serif;
+    font-size: 14px;
+    color: #314438;
+    display: block;
+
 }
 .intro{
+    max-width: 1920px;
+    height: 300vh;
+}
+.header{
+    position: sticky;
     width: 100%;
-    height: 100vh;
-    background: url("../img/back.jpg")center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    height: 34px;
+    border-bottom: 1px solid #c6cbc8;
+    top:17px;
+    left: 1000px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.header__inner{
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.b{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    margin: 10px 0 10px 40px;
+    padding: 5px 2px;
+    float: left;
+    bottom: 5px;
 
+}
+.a{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    margin: 10px 40px 10px 0;
+    padding: 5px 2px;
+    float: right;
+    bottom: 5px;
+}
+.header__deep{
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 77px;
+    left: -1px;
+}
+.logo{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+    padding: 5px 2px;
+    top: 50%;
+    left: 6%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.s__text{
+    position: relative;
+    display: inline-block;
+    bottom: 38px;
+    left: 170px;
+    float: left;
+    padding: 26px 14px;
+    text-transform: uppercase;
+}
+.s__butt{
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 28px;
+    color: #f3eeea;
+    background: #314438;
+    font-size: 12px;
+    text-align: center;
+    float: right;
+    font-family: 'Josefin Sans', sans-serif;
+    bottom: 35px;
+    margin: 10px 40px 10px 0;
+    padding: 6px;
 }
