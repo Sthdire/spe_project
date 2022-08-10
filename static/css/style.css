@@ -138,3 +138,14 @@ body::-webkit-scrollbar-thumb {
 .img:hover{
     transform: scale(1.05);
 }
+
+.icon_basket{
+    position: absolute;
+    weight: 32px;
+    height: 32px;
+    padding-left: 93%;
+    padding-top: 1.5%;
+    overflow: visible;
+    box-sizing: border-box;
+    background: center no-repeat;
+}
