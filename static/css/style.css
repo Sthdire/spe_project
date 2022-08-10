@@ -8,6 +8,7 @@ body{
     font-size: 14px;
     color: #314438;
     display: block;
+    overflow-x: hidden;
 
 }
 body::-webkit-scrollbar {
@@ -131,26 +132,64 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
 }
+.own__img__block{
+    position: absolute;
+    width: 120%;
+    height: 900px;
+    background: url('/static/img/own__fixed.jpg') center no-repeat;
+    background-size: cover;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+
+}
 .img__unit__block{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    z-index: 100;
+    top:1110px;
 }
 
 .img__block{
     position: absolute;
-    top: 50%;
-    left: 40px;
-    width: 300px;
-    height: 300px;
+    display: inline-block;
+    width: 629px;
+    height: 500px;
+    float: left;
     overflow: hidden;
-
 }
 .img{
     position: relative;
     width: 100%;
     height: 100%;
-    background: url("../img/duck.jpg") center no-repeat;
     transition: 1s;
 }
 .img:hover{
     transform: scale(1.05);
+}
+.f{
+    left:5%;
+}
+.s{
+    left: 35%;
+}
+.t{
+    left: 65% ;
+}
+.q{
+    background: url("../img/first.jpg") center no-repeat;
+    background-size: cover;
+}
+.w{
+    background: url("../img/second.jpg") center no-repeat;
+    background-size: cover;
+}
+.e{
+    background: url("../img/third.jpg") center no-repeat;
+    background-size: cover;
 }
 
