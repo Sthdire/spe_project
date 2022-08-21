@@ -3,7 +3,7 @@ from pymongo import MongoClient
 client = MongoClient('localhost', 27017)
 db = client["py_app_db"]
 comments_collection = db["comments"]
-comments_collection.drop()
+
 def push_comm(username, comm):
     comment = {
         'username': username,
