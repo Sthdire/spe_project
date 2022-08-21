@@ -3,11 +3,7 @@ from pymongo import MongoClient
 client = MongoClient('localhost', 27017)
 db = client["py_app_db"]
 comments_collection = db["comments"]
-
-cursor = comments_collection.find({})
-count = comments_collection.count_documents({})
-
-
+comments_collection.drop()
 def push_comm(username, comm):
     comment = {
         'username': username,
@@ -17,10 +13,18 @@ def push_comm(username, comm):
 
 
 def get_comm_username(x):
-    username = cursor[count - x]['username']
+    count = comments_collection.count_documents({})
+    username = 'none'
+    if count > 9:
+        cursor = comments_collection.find({})
+        username = cursor[count - x]['username']
     return username
 
 
 def get_comm_value(x):
-    com_value = cursor[count - x]['com_value']
+    count = comments_collection.count_documents({})
+    com_value = 'none'
+    if count > 9:
+        cursor = comments_collection.find({})
+        com_value = cursor[count - x]['com_value']
     return com_value

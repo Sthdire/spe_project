@@ -67,6 +67,12 @@
             </form>
         </div>
     </div>
-<h1>{{username[0]}}</h1>
+<h1>
+    {% if username[0] == 'none' %}
+        no comments
+    {% else %}
+        {{username[0]}}
+    {% endif %}
+</h1>
 </body>
 </html>
